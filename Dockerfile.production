@@ -7,9 +7,6 @@ COPY app/package-lock.json package-lock.json
 
 RUN npm ci
 
-# Установите sequelize-cli глобально
-RUN npm install -g sequelize-cli
-
 COPY app/. .
 
 EXPOSE 8080
