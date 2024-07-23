@@ -23,7 +23,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Run tests with Docker Compose
-        run: make test  
+        run: make push  
 
       - name: Build and push Docker image
         run: |
