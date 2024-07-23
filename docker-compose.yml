@@ -1,9 +1,9 @@
 services:
   app:
+    image: kochev2t/devops-for-programmers-project-74:latest
     build:
       context: .
-      dockerfile: Dockerfile
-    working_dir: /app
+      dockerfile: Dockerfile.production
     volumes:
       - ./app:/app
     command: make test
