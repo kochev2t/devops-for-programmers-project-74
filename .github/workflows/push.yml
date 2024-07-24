@@ -23,7 +23,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Run tests with Docker Compose
-        run: docker-compose -f docker-compose.yml run app npm test 
+        run: docker-compose -f docker-compose.yml up --abort-on-container-exit 
 
       - name: Build and Push Docker image
         uses: docker/build-push-action@v3
