@@ -1,7 +1,7 @@
-compose-setup:
+setup:
 	docker-compose run --rm app make setup
 
-compose-dev:
+dev:
 	docker-compose run app make start
 
 test:
