@@ -5,13 +5,13 @@ FROM node:20.12.2
 WORKDIR /app
 
 # Копируем package.json и package-lock.json в рабочую директорию
-COPY package*.json ./
+#COPY package*.json ./
 
 # Устанавливаем зависимости
 #RUN npm install
 
 # Копируем остальные файлы в рабочую директорию
-COPY . .
+#COPY . .
 
 # Команда по умолчанию для запуска приложения
-CMD ["make", "test"]
+#CMD ["make", "test"]
