@@ -7,3 +7,11 @@ services:
     volumes:
       - ./app:/app
     command: make test
+    depends_on:
+      - db
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: testuser
+      POSTGRES_PASSWORD: testpassword
+      POSTGRES_DB: testdb
