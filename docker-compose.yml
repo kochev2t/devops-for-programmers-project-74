@@ -7,6 +7,8 @@ services:
     command: make test
     depends_on:
       - db
+    env_file:
+      - .env.example
     environment:
       - DATABASE_HOST=${DATABASE_HOST}
       - DATABASE_NAME=${DATABASE_NAME}
