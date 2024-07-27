@@ -8,4 +8,4 @@ test:
 	docker-compose -f docker-compose.yml up --abort-on-container-exit --exit-code-from app
 
 ci:
-	docker-compose --env-file .env.example -f docker-compose.yml up --build --abort-on-container-exit
+	docker-compose -f docker-compose.yml up --build --abort-on-container-exit
